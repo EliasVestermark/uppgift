@@ -157,6 +157,7 @@ header{
         justify-content: space-between;
         align-items: center;
         text-align: center;
+
         @media(min-width: 1200px){
             text-align: left;
         }
@@ -200,7 +201,6 @@ header{
         img {
             display: none;
             min-height: 500px;
-
 
             @media(min-width: 1200px){
                 display: block;
@@ -247,32 +247,64 @@ header{
 }
 
 .contact-menu {
-    display: flex;
-    gap: 30px;
-    padding-top: 110px;
-    
+    display: block;
+    padding-top: 20px;
+
+    @media (min-width: 576px){
+        display: flex;
+        gap: 10px;
+        padding-top: 40px;       
+    }
+
+    @media (min-width: 992px){
+        display: flex;
+        gap: 30px;
+        padding-top: 110px;       
+    }
 
     .contact-info {
         display: flex;
         flex: 1;
-
-        padding: 20px;
+        padding: 10px ;
+        font-size: 15px;
+        margin-top: 10px;
+        justify-content: center;
         border: 1px solid #d2d0c8;
 
+        @media (min-width: 992px){
+            padding: 50px;
+            font-size: 18px;
+            text-align: start;
+        }
+
         .contact-symbol {
-            align-self: flex-start;
+            display: flex;
+            align-self: center;
             border: 1px solid #302f2e;
             background-color: #302f2e;
             color: white;
             border-radius: 50%;
-            font-size: 26px;
-            padding: 19px 22px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            margin-right: 25px;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 1199px) and (min-width:577px){
+                display: none;
+            }
+
+            @media (min-width: 1200px){
+                align-self: flex-start;
+                margin-right: 25px;
+            }
         }
+
+        
 
         .info {
             padding-top: 10px;
-            padding-left: 25px;
-            font-size: 18px;
 
             h4 {
                 font-family: 'DM Sans', sans-serif;

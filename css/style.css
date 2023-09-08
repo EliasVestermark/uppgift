@@ -222,29 +222,66 @@ header .container .menu .main-menu nav a:hover {
 }
 
 .contact-menu {
-  display: flex;
-  gap: 30px;
-  padding-top: 110px;
+  display: block;
+  padding-top: 20px;
+}
+@media (min-width: 576px) {
+  .contact-menu {
+    display: flex;
+    gap: 10px;
+    padding-top: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .contact-menu {
+    display: flex;
+    gap: 30px;
+    padding-top: 110px;
+  }
 }
 .contact-menu .contact-info {
   display: flex;
   flex: 1;
-  padding: 20px;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+  justify-content: center;
   border: 1px solid #d2d0c8;
 }
+@media (min-width: 992px) {
+  .contact-menu .contact-info {
+    padding: 50px;
+    font-size: 18px;
+    text-align: start;
+  }
+}
 .contact-menu .contact-info .contact-symbol {
-  align-self: flex-start;
+  display: flex;
+  align-self: center;
   border: 1px solid #302f2e;
   background-color: #302f2e;
   color: white;
   border-radius: 50%;
-  font-size: 26px;
-  padding: 19px 22px;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  margin-right: 25px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1199px) and (min-width: 577px) {
+  .contact-menu .contact-info .contact-symbol {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-menu .contact-info .contact-symbol {
+    align-self: flex-start;
+    margin-right: 25px;
+  }
 }
 .contact-menu .contact-info .info {
   padding-top: 10px;
-  padding-left: 25px;
-  font-size: 18px;
 }
 .contact-menu .contact-info .info h4 {
   font-family: "DM Sans", sans-serif;
