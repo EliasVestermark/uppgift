@@ -6,6 +6,12 @@ html, body {
   font-weight: 400;
   font-size: 16px;
 }
+html ::-moz-placeholder, body ::-moz-placeholder {
+  color: #c5c3bf;
+}
+html ::placeholder, body ::placeholder {
+  color: #c5c3bf;
+}
 html .btn-yellow, body .btn-yellow {
   background-color: #F9D783;
   border: 1px solid #F9D783;
@@ -224,19 +230,20 @@ header .container .menu .main-menu nav a:hover {
 .contact-menu {
   display: block;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 @media (min-width: 576px) {
   .contact-menu {
     display: flex;
     gap: 10px;
-    padding-top: 40px;
+    padding: 20px 0px 40px 0px;
   }
 }
 @media (min-width: 992px) {
   .contact-menu {
     display: flex;
     gap: 30px;
-    padding-top: 110px;
+    padding: 110px 0px 80px 0px;
   }
 }
 .contact-menu .contact-info {
@@ -286,4 +293,40 @@ header .container .menu .main-menu nav a:hover {
 .contact-menu .contact-info .info h4 {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
+}
+
+.leave-a-message {
+  background-color: #F0EFE9;
+  justify-content: center;
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+.leave-a-message h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+@media (min-width: 576px) {
+  .leave-a-message h3 {
+    font-size: 45px;
+  }
+}
+.leave-a-message .input-container .input-text {
+  border-style: none;
+  width: 78%;
+  padding: 18px 10px 15px 35px;
+  padding-right: 20px;
+  margin-top: 16px;
+  border-radius: 30px;
+  overflow: hidden;
+  outline-color: #F9D783;
+}
+.leave-a-message .input-container .input-text.large {
+  padding-bottom: 120px;
+}
+.leave-a-message #Send-message {
+  display: inline-block;
+  width: 78%;
+  margin-top: 30px;
 }
