@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap');
 
 html, body{
-    color: #5b5752;
+    color: #373534;
 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -11,11 +11,11 @@ html, body{
     .btn-yellow{
         background-color: #F9D783;
         border: 1px solid #F9D783;
-        color: #5b5752;
+        color: #4c4946;
         text-decoration: none;
         padding: 0.6rem 1.5rem;
         font-weight: 600;
-        border-radius: 2rem;
+        border-radius: 25px;
 
         i{
             margin-left: 0.5rem;
@@ -211,7 +211,7 @@ header{
     }
 }
 
-.contact {
+.lets-connect {
     background-color: #F0EFE9;
     display: flex;
     justify-content: center;
@@ -243,5 +243,41 @@ header{
         font-family: 'DM Sans', sans-serif;
         font-weight: bold;
         font-size: 56px;
+    }
+}
+
+.contact-menu {
+    display: flex;
+    gap: 30px;
+    padding-top: 110px;
+    
+
+    .contact-info {
+        display: flex;
+        flex: 1;
+
+        padding: 20px;
+        border: 1px solid #d2d0c8;
+
+        .contact-symbol {
+            align-self: flex-start;
+            border: 1px solid #302f2e;
+            background-color: #302f2e;
+            color: white;
+            border-radius: 50%;
+            font-size: 26px;
+            padding: 19px 22px;
+        }
+
+        .info {
+            padding-top: 10px;
+            padding-left: 25px;
+            font-size: 18px;
+
+            h4 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: bold;
+            }
+        }
     }
 }
