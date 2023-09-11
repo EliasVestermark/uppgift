@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap");
 html, body {
-  color: #373534;
+  color: #191919;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -25,9 +25,26 @@ html .btn-yellow i, body .btn-yellow i {
   margin-left: 0.5rem;
 }
 html .btn-yellow:hover, body .btn-yellow:hover {
-  background-color: #6f634f;
-  border-color: #6f634f;
-  color: #e4dbca;
+  background-color: #191919;
+  border-color: #191919;
+  color: #F0EFE9;
+}
+html .btn-black, body .btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  border-radius: 25px;
+}
+html .btn-black i, body .btn-black i {
+  margin-left: 0.5rem;
+}
+html .btn-black:hover, body .btn-black:hover {
+  background-color: #FFFFFF;
+  border-color: #191919;
+  color: #191919;
 }
 html .btn-transparent, body .btn-transparent {
   background-color: transparent;
@@ -42,9 +59,34 @@ html .btn-transparent i, body .btn-transparent i {
   margin-left: 0.5rem;
 }
 html .btn-transparent:hover, body .btn-transparent:hover {
-  background-color: #6f634f;
-  border-color: #6f634f;
-  color: #e4dbca;
+  background-color: #191919;
+  border-color: #191919;
+  color: #F0EFE9;
+}
+html .section-title, body .section-title {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  html .section-title, body .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
+html .section-title p, body .section-title p {
+  color: red;
+  margin-bottom: 10px;
+}
+html .section-title h2, body .section-title h2 {
+  font-family: "DM Sans", sans-serif;
+  color: #191919;
+  font-weight: 700;
+  font-size: 45px;
+}
+html .center-content, body .center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -80,7 +122,7 @@ header .container .menu {
 header .container .menu .top-menu {
   display: flex;
   justify-content: flex-end;
-  border-bottom: 1px solid #d3cfc9;
+  border-bottom: 1px solid #DAD9D3;
   padding-bottom: 0.5rem;
 }
 @media (min-width: 1400px) {
@@ -135,69 +177,121 @@ header .container .menu .main-menu nav a:hover {
   text-decoration: underline;
 }
 
-.showcase {
+.index-main .showcase {
   background-color: #F0EFE9;
 }
-.showcase .container {
+.index-main .showcase .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 @media (min-width: 1200px) {
-  .showcase .container {
+  .index-main .showcase .container {
     text-align: left;
   }
 }
-.showcase .container .content {
+.index-main .showcase .container .content {
   padding-bottom: 30px;
-  color: #47443e;
+  color: RGBA(25, 25, 25, 0.8);
 }
-.showcase .container .content h1 {
+.index-main .showcase .container .content h1 {
+  color: #191919;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 50px;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .showcase .container .content h1 {
+  .index-main .showcase .container .content h1 {
     font-size: 70px;
   }
 }
 @media (min-width: 1200px) {
-  .showcase .container .content h1 {
+  .index-main .showcase .container .content h1 {
     font-size: 86px;
     text-align: left;
   }
 }
-.showcase .container .content p {
+.index-main .showcase .container .content p {
   font-size: 15px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .showcase .container .content p {
+  .index-main .showcase .container .content p {
     font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
-  .showcase .container .content p {
+  .index-main .showcase .container .content p {
     text-align: left;
   }
 }
-.showcase .container img {
+.index-main .showcase .container img {
   display: none;
   min-height: 500px;
 }
 @media (min-width: 1200px) {
-  .showcase .container img {
+  .index-main .showcase .container img {
     display: block;
     margin-right: -50px;
   }
 }
+.index-main .project-and-case .section-title {
+  text-align: center;
+}
+.index-main .project-and-case .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .index-main .project-and-case .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.index-main .project-and-case .project-and-cases .project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
+}
+.index-main .project-and-case .project-and-cases .project img {
+  width: 100%;
+  height: auto;
+}
+.index-main .project-and-case .project-and-cases .project h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 35px;
+  padding-bottom: 16;
+  border-bottom: 1px solid #DAD9D3;
+}
+.index-main .project-and-case .project-and-cases .project .read-more {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #191919;
+}
+.index-main .project-and-case .project-and-cases .project .read-more i {
+  margin-left: 3px;
+}
+.index-main .project-and-case .project-and-cases .project:hover .read-more {
+  text-decoration: underline;
+}
+.index-main .project-and-case .center-content {
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
 
-.lets-connect {
+.contact-main .lets-connect {
   background-color: #F0EFE9;
   display: flex;
   justify-content: center;
@@ -205,48 +299,47 @@ header .container .menu .main-menu nav a:hover {
   padding-top: 100px;
   padding-bottom: 80px;
 }
-.lets-connect nav {
+.contact-main .lets-connect nav {
   padding-bottom: 10px;
 }
-.lets-connect nav a {
+.contact-main .lets-connect nav a {
   color: #5b5752;
   text-decoration: none;
   margin-right: 1rem;
   font-weight: 300;
 }
-.lets-connect nav a.active {
+.contact-main .lets-connect nav a.active {
   font-weight: 500;
 }
-.lets-connect nav a:hover {
+.contact-main .lets-connect nav a:hover {
   text-decoration: underline;
 }
-.lets-connect h2 {
+.contact-main .lets-connect h2 {
   padding-top: 10px;
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
   font-size: 56px;
 }
-
-.contact-menu {
+.contact-main .contact-menu {
   display: block;
   padding-top: 20px;
   padding-bottom: 40px;
 }
 @media (min-width: 576px) {
-  .contact-menu {
+  .contact-main .contact-menu {
     display: flex;
     gap: 10px;
     padding: 20px 0px 40px 0px;
   }
 }
 @media (min-width: 992px) {
-  .contact-menu {
+  .contact-main .contact-menu {
     display: flex;
     gap: 30px;
     padding: 110px 0px 80px 0px;
   }
 }
-.contact-menu .contact-info {
+.contact-main .contact-menu .contact-info {
   display: flex;
   flex: 1;
   padding: 10px;
@@ -254,19 +347,21 @@ header .container .menu .main-menu nav a:hover {
   margin-top: 10px;
   justify-content: center;
   border: 1px solid #d2d0c8;
+  color: RGBA(25, 25, 25, 0.8);
 }
 @media (min-width: 992px) {
-  .contact-menu .contact-info {
+  .contact-main .contact-menu .contact-info {
     padding: 50px;
     font-size: 18px;
     text-align: start;
+    color: #191919;
   }
 }
-.contact-menu .contact-info .contact-symbol {
+.contact-main .contact-menu .contact-info .contact-symbol {
   display: flex;
   align-self: center;
-  border: 1px solid #302f2e;
-  background-color: #302f2e;
+  border: 1px solid #191919;
+  background-color: #191919;
   color: white;
   border-radius: 50%;
   width: 60px;
@@ -277,55 +372,54 @@ header .container .menu .main-menu nav a:hover {
   justify-content: center;
 }
 @media (max-width: 1199px) and (min-width: 577px) {
-  .contact-menu .contact-info .contact-symbol {
+  .contact-main .contact-menu .contact-info .contact-symbol {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  .contact-menu .contact-info .contact-symbol {
+  .contact-main .contact-menu .contact-info .contact-symbol {
     align-self: flex-start;
     margin-right: 25px;
   }
 }
-.contact-menu .contact-info .info {
+.contact-main .contact-menu .contact-info .info {
   padding-top: 10px;
 }
-.contact-menu .contact-info .info h4 {
+.contact-main .contact-menu .contact-info .info h4 {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
 }
-
-.leave-a-message {
+.contact-main .leave-a-message {
   background-color: #F0EFE9;
   justify-content: center;
   text-align: center;
   padding-top: 110px;
   padding-bottom: 80px;
 }
-.leave-a-message h3 {
+.contact-main .leave-a-message h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
   font-size: 30px;
 }
 @media (min-width: 576px) {
-  .leave-a-message h3 {
+  .contact-main .leave-a-message h3 {
     font-size: 45px;
   }
 }
-.leave-a-message .input-container .input-text {
+.contact-main .leave-a-message .input-container .input-text {
   border-style: none;
+  border-radius: 30px;
   width: 78%;
   padding: 18px 10px 15px 35px;
   padding-right: 20px;
   margin-top: 16px;
-  border-radius: 30px;
   overflow: hidden;
   outline-color: #F9D783;
 }
-.leave-a-message .input-container .input-text.large {
+.contact-main .leave-a-message .input-container .input-text.large {
   padding-bottom: 120px;
 }
-.leave-a-message #Send-message {
+.contact-main .leave-a-message #Send-message {
   display: inline-block;
   width: 78%;
   margin-top: 30px;
