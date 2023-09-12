@@ -101,100 +101,118 @@ html, body{
     }
 }
 
-header{
+header {
     background-color: #F0EFE9;
-    padding: 0.5rem;
+    padding: 16px;
 
-    
-    .container{
-        display: flex;
+    .container {
+        display: grid;
         align-items: center;
-        justify-content: space-between;
-        gap: 2rem;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "logo bars";
 
-        .menu-bars{
-            font-size: 1.5rem;
+        @media (min-width: 992px) {
+            grid-template-columns: auto 1fr auto;
+            grid-template-areas:    "logo cib social"
+                                    "logo menu menu";
+        }
+        
+        .btn-menubars {
+            grid-area: bars;
+            font-size: 25px;
             border: none;
             background-color: transparent;
 
-            @media (min-width: 992px){
+            @media (min-width: 992px) {
                 display: none;
             }
         }
 
-        .menu{
+        .logotype {
+            grid-area: logo;
+            margin-right: 70px;
+        }
+    
+        .contactinformation-bar{
+            grid-area: cib;
             display: none;
-            flex: 1;
-            padding-left: 2rem;
-            @media (min-width: 992px){
+            justify-content: flex-start;
+            align-items: center;
+
+            @media (min-width: 1200px) {
+                display: flex;
+            }
+
+            .contact-box{
+                margin-right: 1rem;
+                padding-right: 1rem;
+                border-right: 1px solid #d3cfc9;
+
+                i{
+                    margin-right: 0.5rem;
+                    font-size: 1.2rem;
+                }
+
+                &.last{
+                    border-right: none;
+                }
+            }
+        }
+    
+        .socialmedia-bar {
+            grid-area: social;
+            display: none;
+
+            @media (min-width: 992px) {
                 display: block;
             }
 
-            .top-menu{
-                display: flex;
-                justify-content: flex-end;
-                border-bottom: 1px solid #DAD9D3;
-                padding-bottom: 0.5rem;
+            a {
+                color: #191919;
+                font-size: 1.3rem;
+                margin-left: 10px;
 
-                @media(min-width: 1400px){
-                    justify-content: space-between;
-                }
-                
-                .contact-information{
-                    @media(min-width: 1400px){
-                        display: flex;
-                    }
-                    display: none;
-                    align-items: center;
-                    
-                    .contact-box{
-                        margin-right: 1rem;
-                        padding-right: 1rem;
-                        border-right: 1px solid #d3cfc9;
-
-                        i{
-                            margin-right: 0.5rem;
-                            font-size: 1.2rem;
-                        }
-
-                        &.last{
-                            border-right: none;
-                        }
-                    }
-                }
-
-                .social-media{
-                    a {
-                        color: #47443e;
-                        font-size: 1.3rem;
-                        margin-left: 1rem;
-
-                        &:hover{
-                            color: #867f74;
-                        }
-                    }
+                &:hover{
+                    color: #7c7c7c;
                 }
             }
+        }
+    
+        .menu {
+            grid-area: menu;
+            display: none;
+            justify-content: space-between;
+            border-top: 1px solid #DAD9D3;
+            margin-top: 10px;
+            padding-top: 10px;
 
-            .main-menu{
+            @media (min-width: 992px) {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding-top: 1.3rem;
+            }
 
-                nav{
-                    a{
-                        color: #47443e;
-                        text-decoration: none;
-                        margin-right: 1rem;
-                        
-                        &.active{
-                            font-weight: 500;
-                        }
+            nav{
+                a{
+                    display: inline-block;
+                    color: #191919;
+                    text-decoration: none;
+                    margin-right: 35px;
+                    position: relative;
+                    
+                    &.active{
+                        font-weight: 500;
+                    }
 
-                        &:hover{
-                            text-decoration: underline;
-                        }
+                    &.active::after,
+                    &:hover::after{
+                        content: '';
+                        position: absolute;
+                        font-weight: 500;
+                        height: 2px;
+                        width: 15px;
+                        background-color: #191919;
+                        left: 50%;
+                        bottom: -3px;
+                        transform: translate((calc(50% - 15px)));
                     }
                 }
             }
@@ -266,6 +284,17 @@ header{
             }
         }
     }
+
+    .company-logotypes {
+        
+        .logotypes {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding-top: 72px;
+            padding-bottom: 80px;
+        }
+    }
     
     .project-and-case {
     
@@ -335,6 +364,7 @@ header{
         background-color: #F0EFE9;
         display: flex;
         justify-content: center;
+        align-items: center;
         text-align: center;
         padding-top: 100px;
         padding-bottom: 80px;
