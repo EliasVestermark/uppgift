@@ -264,6 +264,45 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   padding-top: 72px;
   padding-bottom: 80px;
 }
+.index-main .features .container {
+  display: flex;
+  border: 1px solid #d3cfc9;
+  max-width: 1520px;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 213px;
+}
+.index-main .features .container .title-and-btn {
+  display: grid;
+  width: 50%;
+}
+.index-main .features .container .title-and-btn .section-title {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.index-main .features .container .title-and-btn .btn-yellow {
+  text-align: center;
+}
+.index-main .features .container .feature-examples {
+  display: grid;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 103px;
+}
+.index-main .features .container .feature-examples .example {
+  padding: 30px 40px 30px 40px;
+}
+.index-main .features .container .feature-examples .example i {
+  display: block;
+  padding-right: 30px;
+}
+.index-main .features .container .feature-examples .example h3 {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
 .index-main .project-and-case .section-title {
   text-align: center;
 }

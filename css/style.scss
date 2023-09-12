@@ -221,7 +221,6 @@ header {
 }
 
 .index-main {
-
     .showcase {
         background-color: #F0EFE9;
     
@@ -296,6 +295,57 @@ header {
         }
     }
     
+    .features {
+
+        .container {
+            display: flex;
+            border: 1px solid #d3cfc9;
+            max-width: 1520px;
+            margin: auto;
+            padding-left: 100px;
+            padding-right: 213px;
+            
+          
+            .title-and-btn {
+                display: grid;
+                width: 50%;
+
+                .section-title {
+                    padding-top: 80px;
+                    padding-bottom: 50px;
+                }
+
+                .btn-yellow {
+                    text-align: center;
+                }
+            }
+
+            .feature-examples {
+                display: grid;
+                column-gap: 30px;
+                grid-template-columns: 1fr 1fr;
+                padding-left: 103px;
+
+                .example {
+                    padding: 30px 40px 30px 40px;
+                    
+                    i {
+                        display: block;
+                        padding-right: 30px;
+                    }
+
+                    h3 {
+                        display: block;
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
+                    
+                }
+            }
+        }
+    }
+
     .project-and-case {
     
         .section-title {
