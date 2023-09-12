@@ -269,18 +269,20 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   border: 1px solid #d3cfc9;
   max-width: 1520px;
   margin: auto;
+  padding-top: 80px;
   padding-left: 100px;
   padding-right: 213px;
 }
 .index-main .features .container .title-and-btn {
-  display: grid;
-  width: 50%;
+  width: 60%;
 }
 .index-main .features .container .title-and-btn .section-title {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  display: block;
+  padding-top: 0px;
+  padding-bottom: 30px;
 }
 .index-main .features .container .title-and-btn .btn-yellow {
+  display: block;
   text-align: center;
 }
 .index-main .features .container .feature-examples {
@@ -292,13 +294,18 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .index-main .features .container .feature-examples .example {
   padding: 30px 40px 30px 40px;
+  color: RGBA(25, 25, 25, 0.8);
 }
 .index-main .features .container .feature-examples .example i {
   display: block;
+  color: #191919;
   padding-right: 30px;
+  padding-bottom: 32px;
+  font-size: 32px;
 }
 .index-main .features .container .feature-examples .example h3 {
   display: block;
+  color: #191919;
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
