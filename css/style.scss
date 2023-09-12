@@ -287,11 +287,18 @@ header {
     .company-logotypes {
         
         .logotypes {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            padding-top: 72px;
-            padding-bottom: 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-evenly;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            @media(min-width: 1400px){
+                display: flex;
+                gap: 50px;
+                padding-top: 72px;
+                padding-bottom: 80px;
+            }
         }
     }
     
@@ -301,6 +308,7 @@ header {
             display: flex;
             border: 1px solid #d3cfc9;
             max-width: 1520px;
+            width: auto;
             margin: auto;
             padding-top: 80px;
             padding-left: 100px;
