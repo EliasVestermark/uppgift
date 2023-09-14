@@ -11,6 +11,7 @@ html, body{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 28px;
 
     .btn-yellow{
         background-color: #F9D783;
@@ -316,11 +317,9 @@ header {
     .features {
 
         .container {
-            // display: flex;
             border: 1px solid #d3cfc9;
             max-width: 1520px;
             justify-content: center;
-            // width: auto;
             margin: auto;
             padding-top: 80px;
             
@@ -406,24 +405,76 @@ header {
     .our-services {
         display: block;
         background-color: #F0EFE9;
+        text-align: center;
+        padding-bottom: 120px;
 
         .section-title {
-            
+            text-align: center;
+            padding-bottom: 40px;
+
+            h2 {
+                font-size: 35px;
+            }
+
+            @media(min-width: 1200px) {
+                text-align: left;
+
+                h2 {
+                    font-size: 45px;
+                }
+            }
         }
 
         .services {
-            display: flex;
-            gap: 30px;
+            display: block;
+            padding-bottom: 30px;
+            padding-right: 30px;
+            padding-left: 30px;
+            
+
+            @media(min-width: 576px) {
+                padding-right: 0px;
+                padding-left: 0px;
+                padding-bottom: 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+
+            @media(min-width: 1200px) {
+                display: flex;
+                gap: 30px;
+            }
 
             .services-item {
                 display: flex;
                 flex-wrap: wrap;
-                padding-left: 30px;
-                padding-right: 30px;
+                position: relative;
+                padding: 50px 30px 40px 30px;
+                margin-bottom: 20px;
+                background-color: #FFFFFF;
                 color: RGBA(25,25,25,0.8 );
+                text-align: left;
+
+                @media(min-width:576px) {
+                    margin-bottom: 0px;
+                }
+
+                &.active {
+                    background-color: #F9D783;
+                    color: #191919;
+                }
+
+                .short-border {
+                    position: absolute;
+                    left: 30px;
+                    right: 75%;
+                    border-top: 2px solid #191919;
+                }
 
                 h3 {
-                    color: #191919;
+                    padding-top: 40px;
+                    padding-bottom: 8px;
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
                     font-size: 22px;
@@ -435,10 +486,30 @@ header {
 
                 .btn-round {
                     margin-left: auto;
+                    margin-right: 10px;
                     background-color: #191919;
+                    border: 1px solid #191919;
                     color: #FFFFFF;
-                    padding: 10px 15px;
+                    padding: 10px 17px;
                     border-radius: 50%;
+
+                    &:hover{
+                        background-color: #FFFFFF;
+                        border-color: #191919;
+                        color: #191919;
+                    }
+
+                    &.active {
+                        background-color: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                        color: #191919;
+
+                        &:hover{
+                            background-color: #191919;
+                            border-color: #191919;
+                            color: #FFFFFF;
+                        }
+                    }
                 }
             }
         }

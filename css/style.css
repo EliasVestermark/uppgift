@@ -5,6 +5,7 @@ html, body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 28px;
 }
 html ::-moz-placeholder, body ::-moz-placeholder {
   color: #c5c3bf;
@@ -367,20 +368,74 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .index-main .our-services {
   display: block;
   background-color: #F0EFE9;
+  text-align: center;
+  padding-bottom: 120px;
+}
+.index-main .our-services .section-title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.index-main .our-services .section-title h2 {
+  font-size: 35px;
+}
+@media (min-width: 1200px) {
+  .index-main .our-services .section-title {
+    text-align: left;
+  }
+  .index-main .our-services .section-title h2 {
+    font-size: 45px;
+  }
 }
 .index-main .our-services .services {
-  display: flex;
-  gap: 30px;
+  display: block;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (min-width: 576px) {
+  .index-main .our-services .services {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .index-main .our-services .services {
+    display: flex;
+    gap: 30px;
+  }
 }
 .index-main .our-services .services .services-item {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 30px;
-  padding-right: 30px;
+  position: relative;
+  padding: 50px 30px 40px 30px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
   color: RGBA(25, 25, 25, 0.8);
+  text-align: left;
+}
+@media (min-width: 576px) {
+  .index-main .our-services .services .services-item {
+    margin-bottom: 0px;
+  }
+}
+.index-main .our-services .services .services-item.active {
+  background-color: #F9D783;
+  color: #191919;
+}
+.index-main .our-services .services .services-item .short-border {
+  position: absolute;
+  left: 30px;
+  right: 75%;
+  border-top: 2px solid #191919;
 }
 .index-main .our-services .services .services-item h3 {
-  color: #191919;
+  padding-top: 40px;
+  padding-bottom: 8px;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -390,10 +445,27 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .index-main .our-services .services .services-item .btn-round {
   margin-left: auto;
+  margin-right: 10px;
   background-color: #191919;
+  border: 1px solid #191919;
   color: #FFFFFF;
-  padding: 10px 15px;
+  padding: 10px 17px;
   border-radius: 50%;
+}
+.index-main .our-services .services .services-item .btn-round:hover {
+  background-color: #FFFFFF;
+  border-color: #191919;
+  color: #191919;
+}
+.index-main .our-services .services .services-item .btn-round.active {
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  color: #191919;
+}
+.index-main .our-services .services .services-item .btn-round.active:hover {
+  background-color: #191919;
+  border-color: #191919;
+  color: #FFFFFF;
 }
 .index-main .project-and-case .section-title {
   text-align: center;
