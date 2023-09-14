@@ -518,6 +518,9 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   margin-top: 50px;
   margin-bottom: 90px;
 }
+.index-main .meet-our-team .container {
+  display: flex;
+}
 
 .contact-main .lets-connect {
   background-color: #F0EFE9;
