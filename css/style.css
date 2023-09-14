@@ -364,6 +364,37 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-size: 22px;
   font-weight: 700;
 }
+.index-main .our-services {
+  display: block;
+  background-color: #F0EFE9;
+}
+.index-main .our-services .services {
+  display: flex;
+  gap: 30px;
+}
+.index-main .our-services .services .services-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: RGBA(25, 25, 25, 0.8);
+}
+.index-main .our-services .services .services-item h3 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.index-main .our-services .services .services-item p {
+  padding-bottom: 12px;
+}
+.index-main .our-services .services .services-item .btn-round {
+  margin-left: auto;
+  background-color: #191919;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
 .index-main .project-and-case .section-title {
   text-align: center;
 }

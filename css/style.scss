@@ -403,6 +403,47 @@ header {
         }
     }
 
+    .our-services {
+        display: block;
+        background-color: #F0EFE9;
+
+        .section-title {
+            
+        }
+
+        .services {
+            display: flex;
+            gap: 30px;
+
+            .services-item {
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 30px;
+                padding-right: 30px;
+                color: RGBA(25,25,25,0.8 );
+
+                h3 {
+                    color: #191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+
+                p {
+                    padding-bottom: 12px;
+                }
+
+                .btn-round {
+                    margin-left: auto;
+                    background-color: #191919;
+                    color: #FFFFFF;
+                    padding: 10px 15px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
     .project-and-case {
     
         .section-title {
