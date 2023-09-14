@@ -577,12 +577,88 @@ header {
         }
     }
 
-    .meet-our-team {
-        
-        .container {
-            display: flex;
+    .team-and-reviews {
+        background-color: RGBA(240,208,130,0.93 );
 
+        .meet-our-team {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: auto auto;
+            grid-template-areas:    "title btn"
+                                    "team team";
+
+            .section-title {
+                grid-area: title;
+            }
+
+            .btn-yellow {
+                grid-area: btn;
+                margin-top: 50px;
+            }
+
+            .team-members {
+                display: flex;
+                grid-area: team;
+                gap: 22px;
+                padding-top: 5px;  
+                
+                h3 {
+                    color: #191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                    padding-top: 28px;
+                }
+
+                p {
+                    padding-bottom: 34px;
+                    font-weight: 500;
+                    color: RGBA(25,25,25,0.7 );
+                }
+            }
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 72px;
+            gap: 15px;
             
+            .dot {
+                height: 12px;
+                width: 12px;
+                background-color: #C3AB71;
+                border-radius: 50%;
+                display: inline-block;
+    
+                &.second {
+                    background-color: #191919;
+                }
+            }
+        }
+
+        .testimonial {
+            background-color: #FFFFFF;
+            max-width: 1520px;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
+
+            .reviews-row {
+
+                .review {
+
+                    .stars{
+                        color: #F94D1C;
+                    }
+                    
+                    p {
+                        
+                    }
+                }
+                
+            }
         }
     }
 }

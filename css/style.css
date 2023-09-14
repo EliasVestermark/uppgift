@@ -518,10 +518,67 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   margin-top: 50px;
   margin-bottom: 90px;
 }
-.index-main .meet-our-team .container {
-  display: flex;
+.index-main .team-and-reviews {
+  background-color: RGBA(240, 208, 130, 0.93);
 }
-
+.index-main .team-and-reviews .meet-our-team {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title btn" "team team";
+}
+.index-main .team-and-reviews .meet-our-team .section-title {
+  grid-area: title;
+}
+.index-main .team-and-reviews .meet-our-team .btn-yellow {
+  grid-area: btn;
+  margin-top: 50px;
+}
+.index-main .team-and-reviews .meet-our-team .team-members {
+  display: flex;
+  grid-area: team;
+  gap: 22px;
+  padding-top: 5px;
+}
+.index-main .team-and-reviews .meet-our-team .team-members h3 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 28px;
+}
+.index-main .team-and-reviews .meet-our-team .team-members p {
+  padding-bottom: 34px;
+  font-weight: 500;
+  color: RGBA(25, 25, 25, 0.7);
+}
+.index-main .team-and-reviews .dots {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 72px;
+  gap: 15px;
+}
+.index-main .team-and-reviews .dots .dot {
+  height: 12px;
+  width: 12px;
+  background-color: #C3AB71;
+  border-radius: 50%;
+  display: inline-block;
+}
+.index-main .team-and-reviews .dots .dot.second {
+  background-color: #191919;
+}
+.index-main .team-and-reviews .testimonial {
+  background-color: #FFFFFF;
+  max-width: 1520px;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+.index-main .team-and-reviews .testimonial .reviews-row .review .stars {
+  color: #F94D1C;
+}
 .contact-main .lets-connect {
   background-color: #F0EFE9;
   display: flex;
