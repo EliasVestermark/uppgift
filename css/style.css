@@ -520,6 +520,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .index-main .team-and-reviews {
   background-color: RGBA(240, 208, 130, 0.93);
+  padding-bottom: 120px;
 }
 .index-main .team-and-reviews .meet-our-team {
   display: grid;
@@ -534,6 +535,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .index-main .team-and-reviews .meet-our-team .btn-yellow {
   grid-area: btn;
   margin-top: 50px;
+  border-color: #191919;
 }
 .index-main .team-and-reviews .meet-our-team .team-members {
   display: flex;
@@ -575,10 +577,49 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   justify-content: center;
   margin: auto;
   text-align: center;
+  padding-bottom: 120px;
+}
+.index-main .team-and-reviews .testimonial .reviews-row {
+  display: flex;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-bottom: 60px;
+  gap: 90px;
+}
+.index-main .team-and-reviews .testimonial .reviews-row .review {
+  text-align: left;
 }
 .index-main .team-and-reviews .testimonial .reviews-row .review .stars {
   color: #F94D1C;
 }
+.index-main .team-and-reviews .testimonial .reviews-row .review p {
+  padding-top: 12px;
+  font-size: 18px;
+  line-height: 34px;
+}
+.index-main .team-and-reviews .testimonial .reviews-row .review .reviewer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "img name" "img title";
+}
+.index-main .team-and-reviews .testimonial .reviews-row .review .reviewer img {
+  grid-area: img;
+  padding-right: 15px;
+}
+.index-main .team-and-reviews .testimonial .reviews-row .review .reviewer h4 {
+  grid-area: name;
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.index-main .team-and-reviews .testimonial .reviews-row .review .reviewer p {
+  grid-area: title;
+  color: #F94D1C;
+  margin-top: -24px;
+  font-size: 16px;
+}
+
 .contact-main .lets-connect {
   background-color: #F0EFE9;
   display: flex;
