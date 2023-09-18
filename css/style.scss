@@ -561,10 +561,20 @@ header {
     }
 
     .our-services {
+        position: relative;
         display: block;
         background-color: #F0EFE9;
         text-align: center;
         padding-bottom: 120px;
+        z-index: 0;
+
+        .background-lines-right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            max-width: 80%;
+        }
 
         .section-title {
             text-align: center;
@@ -1122,6 +1132,15 @@ header {
             display: inline-block;
             width: 78%;
             margin-top: 30px;
+        }
+    }
+
+    .map {
+        margin-top: 30px;
+        width: 100%;
+
+        @media(min-width: 1000px) {
+            margin-top: 120px;
         }
     }
 }
