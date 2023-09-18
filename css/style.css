@@ -19,7 +19,7 @@ html .btn-yellow, body .btn-yellow {
   color: #4c4946;
   text-decoration: none;
   padding: 0.6rem 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 25px;
 }
 html .btn-yellow i, body .btn-yellow i {
@@ -36,7 +36,7 @@ html .btn-black, body .btn-black {
   color: #FFFFFF;
   text-decoration: none;
   padding: 0.6rem 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 25px;
 }
 html .btn-black i, body .btn-black i {
@@ -53,7 +53,7 @@ html .btn-transparent, body .btn-transparent {
   color: #7a746a;
   text-decoration: none;
   padding: 0.6rem 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 2rem;
 }
 html .btn-transparent i, body .btn-transparent i {
@@ -272,6 +272,10 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     margin-right: -50px;
   }
 }
+.index-main .company-logotypes .logotypes {
+  display: grid;
+  justify-content: center;
+}
 @media (min-width: 768px) {
   .index-main .company-logotypes .logotypes {
     display: grid;
@@ -373,6 +377,148 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
+}
+.index-main .about-company {
+  display: block;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+@media (min-width: 1000px) {
+  .index-main .about-company {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+.index-main .about-company .image-and-square {
+  position: relative;
+}
+.index-main .about-company .image-and-square img {
+  display: none;
+}
+@media (min-width: 600px) {
+  .index-main .about-company .image-and-square img {
+    display: block;
+    padding-right: 20px;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .index-main .about-company .image-and-square img {
+    margin-left: 56px;
+  }
+}
+@media (min-width: 1400px) {
+  .index-main .about-company .image-and-square img {
+    padding-right: 200px;
+  }
+}
+.index-main .about-company .image-and-square .blue-box {
+  background: #BEEBFF;
+  width: 100%;
+  left: 0;
+  bottom: 40px;
+  padding: 30px 17px 55px 24px;
+  margin: auto;
+}
+@media (min-width: 600px) {
+  .index-main .about-company .image-and-square .blue-box {
+    position: absolute;
+    width: 368px;
+  }
+}
+@media (min-width: 1200px) {
+  .index-main .about-company .image-and-square .blue-box {
+    bottom: 40px;
+  }
+}
+.index-main .about-company .image-and-square .blue-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "DM sans", sans-serif;
+}
+.index-main .about-company .image-and-square .blue-box h3 span {
+  font-size: 16px;
+  color: #F94D1C;
+}
+.index-main .about-company .image-and-square .blue-box p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.index-main .about-company .title-and-text {
+  text-align: center;
+  margin-top: 40px;
+}
+@media (min-width: 1000px) {
+  .index-main .about-company .title-and-text {
+    text-align: left;
+    margin-top: 0px;
+  }
+}
+.index-main .about-company .title-and-text .section-title {
+  padding-top: 0;
+  padding-bottom: 37px;
+}
+.index-main .about-company .title-and-text p {
+  line-height: 28px;
+}
+@media (min-width: 1200px) {
+  .index-main .about-company .title-and-text p {
+    line-height: 32px;
+  }
+}
+.index-main .about-company .title-and-text .buttons-and-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 44px;
+}
+@media (min-width: 1000px) {
+  .index-main .about-company .title-and-text .buttons-and-text {
+    display: block;
+    margin-top: 44px;
+  }
+}
+@media (min-width: 1200px) {
+  .index-main .about-company .title-and-text .buttons-and-text {
+    display: flex;
+    margin-top: 84px;
+  }
+}
+.index-main .about-company .title-and-text .buttons-and-text .video {
+  display: flex;
+  margin-top: 0;
+  margin-left: 40px;
+  align-self: center;
+}
+@media (min-width: 1000px) {
+  .index-main .about-company .title-and-text .buttons-and-text .video {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .index-main .about-company .title-and-text .buttons-and-text .video {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+.index-main .about-company .title-and-text .buttons-and-text .video .btn-video {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 9px 18px;
+  border: 1px solid #191919;
+}
+.index-main .about-company .title-and-text .buttons-and-text .video .btn-video:hover {
+  background-color: #191919;
+  border-color: #191919;
+  color: #F0EFE9;
+}
+.index-main .about-company .title-and-text .buttons-and-text .video p {
+  margin-left: 16px;
+  margin-bottom: 0;
+  align-self: center;
 }
 .index-main .our-services {
   display: block;

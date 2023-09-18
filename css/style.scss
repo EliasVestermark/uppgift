@@ -19,7 +19,7 @@ html, body{
         color: #4c4946;
         text-decoration: none;
         padding: 0.6rem 1.5rem;
-        font-weight: 600;
+        font-weight: 400;
         border-radius: 25px;
 
         i{
@@ -39,7 +39,7 @@ html, body{
         color: #FFFFFF;
         text-decoration: none;
         padding: 0.6rem 1.5rem;
-        font-weight: 600;
+        font-weight: 400;
         border-radius: 25px;
 
         i{
@@ -59,7 +59,7 @@ html, body{
         color: #7a746a;
         text-decoration: none;
         padding: 0.6rem 1.5rem;
-        font-weight: 600;
+        font-weight: 400;
         border-radius: 2rem;
 
         i{
@@ -301,7 +301,9 @@ header {
 
     .company-logotypes {
         .logotypes {
-            
+            display: grid;
+            justify-content: center;
+
             @media(min-width: 768px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -407,6 +409,152 @@ header {
                         font-weight: 700;
                     }
                     
+                }
+            }
+        }
+    }
+
+    .about-company {
+        display: block;
+        padding-top: 70px;
+        padding-bottom: 80px;
+
+        @media(min-width: 1000px) {
+            display: flex;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        .image-and-square {
+            position: relative;
+            
+            img {
+                display: none;
+                
+                @media(min-width: 600px) {
+                display: block;
+                padding-right: 20px;
+                margin-left: 0px;
+                }
+
+                @media(min-width: 768px) {
+                    margin-left: 56px;
+                }
+
+                @media(min-width: 1400px) {
+                    padding-right: 200px;
+                }
+            }
+
+            .blue-box {
+                background: #BEEBFF;
+                width: 100%;
+                left: 0;
+                bottom: 40px;
+                padding: 30px 17px 55px 24px;
+                margin: auto;
+
+                @media(min-width: 600px) {
+                    position: absolute;
+                    width: 368px;
+                    }
+
+                @media(min-width: 1200px) {
+                    bottom: 40px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    font-family: 'DM sans', sans-serif;
+
+                    span {
+                        font-size: 16px;
+                        color: #F94D1C;
+                    }
+                }
+
+                p {
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .title-and-text {
+            text-align: center;
+            margin-top: 40px;
+
+            @media(min-width: 1000px) {
+                text-align: left;
+                margin-top: 0px;
+
+            }
+
+            .section-title {
+                padding-top: 0;
+                padding-bottom: 37px;
+            }
+    
+            p {
+                line-height: 28px;
+    
+                @media(min-width: 1200px) {
+                    line-height: 32px;
+                }
+            }
+    
+            .buttons-and-text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 44px;
+    
+                @media(min-width: 1000px) {
+                    display: block;
+                    margin-top: 44px;
+                }
+    
+                @media(min-width: 1200px) {
+                    display: flex;
+                    margin-top: 84px;
+                }
+                
+                .video {
+                    display: flex;
+                    margin-top: 0;
+                    margin-left: 40px;
+                    align-self: center;
+    
+                    @media(min-width: 1000px) {
+                        margin-top: 30px;
+                        margin-left: 0px;
+                    }
+    
+                    @media(min-width: 1200px) {
+                        margin-top: 0;
+                        margin-left: 40px;
+                    }
+    
+                    .btn-video {
+                        background-color: #FFFFFF;
+                        border-radius: 50%;
+                        padding: 9px 18px;
+                        border: 1px solid #191919;
+        
+                        &:hover{
+                            background-color: #191919;
+                            border-color: #191919;
+                            color: #F0EFE9;
+                        }
+                    }
+        
+                    p {
+                        margin-left: 16px;
+                        margin-bottom: 0;
+                        align-self: center;
+                    }
                 }
             }
         }
