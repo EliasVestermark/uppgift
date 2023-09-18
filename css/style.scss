@@ -227,7 +227,17 @@ header {
 
 .index-main {
     .showcase {
+        position: relative;
         background-color: #F0EFE9;
+        z-index: 0;
+
+        .background-lines {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            max-width: 80%;
+        }
     
         .container {
             display: flex;
@@ -753,6 +763,66 @@ header {
                     }
                 }
                 
+            }
+        }
+    }
+
+    .sign-up {
+        position: relative;
+        background-color: #F0EFE9;
+        padding: 40px 0;
+        z-index: 0;
+
+        @media(min-width: 768px) {
+            padding: 80px 0;
+        }
+
+        .background-wavy-lines {
+            position: absolute;
+            bottom: 40px;
+            right: 0;
+            z-index: -1;
+            max-width: 20%;
+        }
+
+        .container {
+            display: block;
+            text-align: center;
+
+            @media(min-width: 1200px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            h2 {
+                font-family: 'DM sans', sans-serif;
+                font-size: 38px;
+                font-weight: 700;
+
+                @media(min-width: 768px) {
+                    font-size: 45px;
+                }
+            }
+
+            form {
+                input {
+                    padding: 6px 20px;
+                    border-radius: 25px;
+                    color: RGBA(25,25,25,0.5 );
+                    outline: none;
+                    border: 1px solid rgba(25, 25, 25, 0.10);
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+
+                    @media(min-width: 768px) {
+                        margin-right: 20px;
+                    }
+                }   
+
+                .btn-yellow {
+                    text-wrap: nowrap;
+                }
             }
         }
     }
