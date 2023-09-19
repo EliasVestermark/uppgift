@@ -55,8 +55,8 @@ html, body{
 
     .btn-transparent{
         background-color: transparent;
-        border: 1px solid #7a746a;
-        color: #7a746a;
+        border: 1px solid #191919;
+        color: #191919;
         text-decoration: none;
         padding: 0.6rem 1.5rem;
         font-weight: 400;
@@ -922,6 +922,91 @@ header {
                     }
                 }
                 
+            }
+        }
+    }
+
+    .article-and-news {
+        padding: 0px;
+        
+        .title-and-btn {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 35px;
+            
+            .section-title {
+                padding-bottom: 0px;
+            }
+
+            .btn-transparent {
+                margin-top: auto;
+            }
+        }
+
+        .articles-container {
+            display: flex;
+            gap: 30px;
+
+            .article {
+                position: relative;
+
+                h4 {
+                    color: #6A6C71;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-top: 28px;
+                }
+
+                h3 {
+                    font-family: 'DM sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                }
+
+                p {
+                    color: RGBA(25,25,25,0.7 );
+                    margin-top: 20px;
+                }
+                .date {
+                    position: absolute;
+                    background-color: #F9D783;
+                    line-height: 18px;
+                    padding: 0px 11px 8px 14px;
+                    top: 16px;
+                    left: 16px;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    span {
+                        font-family: 'DM sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 90px;
+            margin-top: 50px;
+            gap: 15px;
+            
+            .dot {
+                height: 12px;
+                width: 12px;
+                background-color: #D1D1D1;
+                border-radius: 50%;
+                display: inline-block;
+    
+                &.first {
+                    background-color: #191919;
+                }
             }
         }
     }
