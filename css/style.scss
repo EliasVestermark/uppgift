@@ -684,6 +684,77 @@ header {
         }
     }
 
+    .why-choose-us {
+        display: flex;
+        position: relative;
+        z-index: 0;
+
+        .square {
+            position: absolute;
+            background-color: #F0EFE9;
+            height: 425px;
+            width: 100%;
+            left: 42%;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .text {
+            display: block;
+
+            .section-title {
+                padding-top: 60px;
+                padding-bottom: 0px;
+            }
+
+            .reason {
+                position: relative;
+                margin-top: 46px;
+                display: grid;
+                grid-template-columns: auto 1fr;
+                grid-template-areas: "circle h4"
+                                     "circle p";
+                
+                .circle {
+                    grid-area: circle;                    
+                    width: 60px;
+                    height: 60px;
+                    border: 1px solid RGBA(25,25,25,0.1 );
+                    border-radius: 30px;
+                }
+
+                img {
+                    position: absolute;
+                    top: 16px;
+                    left: 16px;
+                }
+
+                h4 {
+                    grid-area: h4;
+                    margin-left: 24px;
+                    margin-bottom: 0px;
+                    margin-top: 6px;
+                    font-family: 'DM sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+
+                p {
+                    grid-area: "p";
+                    margin-left: 24px;
+                    margin-bottom: 0;
+                    color: RGBA(25,25,25,0.7 );
+                }
+            }
+        }
+
+        .imgage {
+            margin-top: 90px;
+            margin-left: 112px;
+        }
+    }
+
+
     .project-and-case {
     
         .section-title {
