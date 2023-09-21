@@ -685,35 +685,60 @@ header {
     }
 
     .why-choose-us {
-        display: flex;
         position: relative;
         z-index: 0;
+
+        @media(min-width: 1400px) {
+            display: flex;
+        }
 
         .square {
             position: absolute;
             background-color: #F0EFE9;
             height: 425px;
-            width: 100%;
-            left: 42%;
+            width: 100vw;
+            left: 0;
             bottom: 0;
             z-index: -1;
+
+            @media(min-width: 1400px) {
+                left: 42%;
+            }
         }
 
         .text {
-            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+
+            @media(min-width: 1400px) {
+                justify-content:left;
+                gap: 0px;
+            }
 
             .section-title {
-                padding-top: 60px;
-                padding-bottom: 0px;
+                padding: 60px 80px 0px 80px;
+                text-align: center;
+
+                @media(min-width: 1400px) {
+                    display: block;
+                    padding: 60px 0px 0px;
+                    text-align: left;
+                }
             }
 
             .reason {
                 position: relative;
-                margin-top: 46px;
+                margin-top: 0px;
                 display: grid;
                 grid-template-columns: auto 1fr;
                 grid-template-areas: "circle h4"
                                      "circle p";
+
+                @media(min-width: 1000px) {
+                    margin-top: 46px;
+                }
                 
                 .circle {
                     grid-area: circle;                    
@@ -749,8 +774,23 @@ header {
         }
 
         .imgage {
-            margin-top: 90px;
-            margin-left: 112px;
+            display: flex;
+            margin-top: 50px;
+            justify-content: center;
+            padding-bottom: 60px;
+
+            @media(min-width: 1400px) {
+                padding-left: 220px;
+                margin-top: 90px;
+                margin-left: 112px;
+                margin: auto;
+            }
+
+            img {
+                @media(max-width: 767px) {
+                    max-width: 90%;
+                }
+            }
         }
     }
 
