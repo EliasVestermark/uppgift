@@ -13,6 +13,13 @@ html, body{
     font-size: 16px;
     line-height: 28px;
 
+    h3 {
+        color: #191919;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
     .btn-yellow{
         background-color: #F9D783;
         border: 1px solid #F9D783;
@@ -327,7 +334,6 @@ header {
     }
     
     .features {
-
         .container {
             border: 1px solid #d3cfc9;
             max-width: 1520px;
@@ -346,9 +352,7 @@ header {
                 padding-left: 100px;
                 padding-right: 213px;
             }
-
-            
-          
+  
             .title-and-btn {
                 width: 60%;
                 display: block;
@@ -403,10 +407,6 @@ header {
 
                     h3 {
                         display: block;
-                        color: #191919;
-                        font-family: 'DM Sans', sans-serif;
-                        font-size: 22px;
-                        font-weight: 700;
                     }
                     
                 }
@@ -465,8 +465,6 @@ header {
 
                 h3 {
                     font-size: 20px;
-                    font-weight: 700;
-                    font-family: 'DM sans', sans-serif;
 
                     span {
                         font-size: 16px;
@@ -644,9 +642,6 @@ header {
                 h3 {
                     padding-top: 40px;
                     padding-bottom: 8px;
-                    font-family: 'DM Sans', sans-serif;
-                    font-weight: 700;
-                    font-size: 22px;
                 }
 
                 p {
@@ -654,6 +649,7 @@ header {
                 }
 
                 .btn-round {
+                    align-self: end;
                     margin-left: auto;
                     margin-right: 10px;
                     background-color: #191919;
@@ -696,8 +692,8 @@ header {
             position: absolute;
             background-color: #F0EFE9;
             height: 225px;
-            width: 100vw;
             left: 0;
+            right: 0;
             bottom: 0;
             z-index: -1;
 
@@ -707,6 +703,7 @@ header {
             
             @media(min-width: 1400px) {
                 left: 42%;
+                width: 58dvw;            
             }
         }
 
@@ -743,7 +740,7 @@ header {
                 margin-top: 0px;
                 display: grid;
                 grid-template-columns: auto 1fr;
-                grid-template-areas: "circle h4"
+                grid-template-areas: "circle h3"
                                      "circle p";
 
                 @media(min-width: 1000px) {
@@ -764,14 +761,11 @@ header {
                     left: 16px;
                 }
 
-                h4 {
-                    grid-area: h4;
+                h3 {
+                    grid-area: h3;
                     margin-left: 24px;
                     margin-bottom: 0px;
                     margin-top: 6px;
-                    font-family: 'DM sans', sans-serif;
-                    font-weight: 700;
-                    font-size: 22px;
                 }
 
                 p {
@@ -804,7 +798,6 @@ header {
         }
     }
 
-
     .project-and-case {
     
         .section-title {
@@ -833,9 +826,6 @@ header {
                 }
 
                 h3 {
-                    font-family: 'DM Sans', sans-serif;
-                    font-size: 22px;
-                    font-weight: 700;
                     padding-top: 35px;
                     padding-bottom: 16;
                     border-bottom: 1px solid #DAD9D3;
@@ -916,10 +906,6 @@ header {
                 }
                 
                 h3 {
-                    color: #191919;
-                    font-family: 'DM Sans', sans-serif;
-                    font-size: 22px;
-                    font-weight: 700;
                     padding-top: 10px;
 
                     @media(min-width: 1200px) {
@@ -1025,11 +1011,8 @@ header {
                             padding-right: 15px;
                         }
 
-                        h4 {
+                        h3 {
                             grid-area: name;
-                            font-family: 'DM Sans', sans-serif;
-                            font-size: 22px;
-                            font-weight: 700;
                             margin-top: 10px;
                         }
 
@@ -1116,8 +1099,7 @@ header {
 
                 img {
                     grid-area: img;
-                    padding-bottom: 20px;
-                    padding-right: 20px;
+                    padding: 0px 20px 20px 0px;
                     width: 100%;
 
                     @media(min-width: 440px) {
@@ -1145,9 +1127,6 @@ header {
 
                 h3 {
                     grid-area: h3;
-                    font-family: 'DM sans', sans-serif;
-                    font-size: 22px;
-                    font-weight: 700;
 
                     @media(min-width: 1400px) {
                         margin-top: 20px;
@@ -1255,8 +1234,7 @@ header {
                     color: RGBA(25,25,25,0.5 );
                     outline: none;
                     border: 1px solid rgba(25, 25, 25, 0.10);
-                    margin-top: 20px;
-                    margin-bottom: 30px;
+                    margin: 20px 0px 30px 0px;
 
                     @media(min-width: 768px) {
                         margin-right: 20px;
@@ -1405,10 +1383,7 @@ header {
                 margin-top: 16px;
                 overflow: hidden;
                 outline-color: #F9D783;
-    
-                &.large {
-                    padding-bottom: 120px;
-                }
+                resize: none;
             }   
         }
     
@@ -1420,8 +1395,10 @@ header {
     }
 
     .map {
+        background: url("../images/map.png") no-repeat center;
+        background-color: #F0EFE9;
+        height: 620px;
         margin-top: 30px;
-        width: 100%;
 
         @media(min-width: 1000px) {
             margin-top: 120px;

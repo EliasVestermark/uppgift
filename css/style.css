@@ -13,6 +13,12 @@ html ::-moz-placeholder, body ::-moz-placeholder {
 html ::placeholder, body ::placeholder {
   color: #c5c3bf;
 }
+html h3, body h3 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
 html .btn-yellow, body .btn-yellow {
   background-color: #F9D783;
   border: 1px solid #F9D783;
@@ -373,10 +379,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .index-main .features .container .feature-examples .example h3 {
   display: block;
-  color: #191919;
-  font-family: "DM Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
 }
 .index-main .about-company {
   display: block;
@@ -434,8 +436,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .index-main .about-company .image-and-square .blue-box h3 {
   font-size: 20px;
-  font-weight: 700;
-  font-family: "DM sans", sans-serif;
 }
 .index-main .about-company .image-and-square .blue-box h3 span {
   font-size: 16px;
@@ -601,14 +601,12 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .index-main .our-services .services .services-item h3 {
   padding-top: 40px;
   padding-bottom: 8px;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
 }
 .index-main .our-services .services .services-item p {
   padding-bottom: 12px;
 }
 .index-main .our-services .services .services-item .btn-round {
+  align-self: end;
   margin-left: auto;
   margin-right: 10px;
   background-color: #191919;
@@ -645,8 +643,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   position: absolute;
   background-color: #F0EFE9;
   height: 225px;
-  width: 100vw;
   left: 0;
+  right: 0;
   bottom: 0;
   z-index: -1;
 }
@@ -658,6 +656,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 @media (min-width: 1400px) {
   .index-main .why-choose-us .square {
     left: 42%;
+    width: 58dvw;
   }
 }
 .index-main .why-choose-us .text {
@@ -693,7 +692,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   margin-top: 0px;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: "circle h4" "circle p";
+  grid-template-areas: "circle h3" "circle p";
 }
 @media (min-width: 1000px) {
   .index-main .why-choose-us .text .reason {
@@ -712,14 +711,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   top: 16px;
   left: 16px;
 }
-.index-main .why-choose-us .text .reason h4 {
-  grid-area: h4;
+.index-main .why-choose-us .text .reason h3 {
+  grid-area: h3;
   margin-left: 24px;
   margin-bottom: 0px;
   margin-top: 6px;
-  font-family: "DM sans", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
 }
 .index-main .why-choose-us .text .reason p {
   grid-area: "p";
@@ -771,9 +767,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   height: auto;
 }
 .index-main .project-and-case .project-and-cases .project h3 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
   padding-top: 35px;
   padding-bottom: 16;
   border-bottom: 1px solid #DAD9D3;
@@ -845,10 +838,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   }
 }
 .index-main .team-and-reviews .meet-our-team .team-members h3 {
-  color: #191919;
-  font-family: "DM Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
   padding-top: 10px;
 }
 @media (min-width: 1200px) {
@@ -947,11 +936,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   grid-area: img;
   padding-right: 15px;
 }
-.index-main .team-and-reviews .testimonial .reviews-row .review .reviewer h4 {
+.index-main .team-and-reviews .testimonial .reviews-row .review .reviewer h3 {
   grid-area: name;
-  font-family: "DM Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
   margin-top: 10px;
 }
 .index-main .team-and-reviews .testimonial .reviews-row .review .reviewer p {
@@ -1029,8 +1015,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .index-main .article-and-news .articles-container .article img {
   grid-area: img;
-  padding-bottom: 20px;
-  padding-right: 20px;
+  padding: 0px 20px 20px 0px;
   width: 100%;
 }
 @media (min-width: 440px) {
@@ -1059,9 +1044,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .index-main .article-and-news .articles-container .article h3 {
   grid-area: h3;
-  font-family: "DM sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
 }
 @media (min-width: 1400px) {
   .index-main .article-and-news .articles-container .article h3 {
@@ -1161,8 +1143,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   color: RGBA(25, 25, 25, 0.5);
   outline: none;
   border: 1px solid rgba(25, 25, 25, 0.1);
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin: 20px 0px 30px 0px;
 }
 @media (min-width: 768px) {
   .index-main .sign-up .container form input {
@@ -1298,9 +1279,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   margin-top: 16px;
   overflow: hidden;
   outline-color: #F9D783;
-}
-.contact-main .leave-a-message .input-container .input-text.large {
-  padding-bottom: 120px;
+  resize: none;
 }
 .contact-main .leave-a-message #Send-message {
   display: inline-block;
@@ -1308,8 +1287,10 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   margin-top: 30px;
 }
 .contact-main .map {
+  background: url("../images/map.png") no-repeat center;
+  background-color: #F0EFE9;
+  height: 620px;
   margin-top: 30px;
-  width: 100%;
 }
 @media (min-width: 1000px) {
   .contact-main .map {
