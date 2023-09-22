@@ -695,12 +695,16 @@ header {
         .square {
             position: absolute;
             background-color: #F0EFE9;
-            height: 425px;
+            height: 225px;
             width: 100vw;
             left: 0;
             bottom: 0;
             z-index: -1;
 
+            @media(min-width: 768px) {
+                height: 425px;
+            }
+            
             @media(min-width: 1400px) {
                 left: 42%;
             }
@@ -718,8 +722,14 @@ header {
             }
 
             .section-title {
-                padding: 60px 80px 0px 80px;
+                padding-top: 60px;
                 text-align: center;
+
+                img {
+                    @media(min-width: 768px) {
+                        padding: 60px 80px 0px 80px;
+                    }
+                }
 
                 @media(min-width: 1400px) {
                     display: block;
