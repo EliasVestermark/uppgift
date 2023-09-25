@@ -415,6 +415,17 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     padding-right: 200px;
   }
 }
+.index-main .about-company .image-and-square .white-lines {
+  position: absolute;
+  left: -35px;
+  top: 35px;
+  display: none;
+}
+@media (min-width: 600px) {
+  .index-main .about-company .image-and-square .white-lines {
+    display: block;
+  }
+}
 .index-main .about-company .image-and-square .blue-box {
   background: #BEEBFF;
   width: 100%;

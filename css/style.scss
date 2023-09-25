@@ -446,6 +446,17 @@ header {
                 }
             }
 
+            .white-lines {
+                position: absolute;
+                left: -35px;
+                top: 35px;
+                display: none;
+                
+                @media(min-width: 600px) {
+                    display: block;
+                }
+            }
+
             .blue-box {
                 background: #BEEBFF;
                 width: 100%;
