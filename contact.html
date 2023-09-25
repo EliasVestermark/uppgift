@@ -108,13 +108,11 @@
                 <h3>Leave us a message <br> for any information.</h3>
                 
                 <form method="post" class="input-container">
-                    <input class="input-text" type="text" placeholder="Name*" maxlength="100">
-                    <input class="input-text"type="text" placeholder="Email*">
-                    <textarea class="input-text" rows="5" type="text" placeholder="Your Message*"></textarea>
-                </form>
-    
-                <a id="Send-message" class="btn-yellow" href="contact.html">Send Message <i class="fa-regular fa-arrow-up-right"></i></a>
-    
+                    <input type="text" id="namn" name="skicka-meddelande" class="input-text" placeholder="Name*" maxlength="100">
+                    <input type="email" id="email" name="skicka-meddelande" class="input-text" placeholder="Email*">
+                    <textarea type="text" id="meddelande" name="skicka-meddelande" class="input-text" rows="5" placeholder="Your Message*"></textarea>
+                    <button id="Send-message" class="btn-yellow" type="submit">Send Message <i class="fa-regular fa-arrow-up-right"></i></button>
+                </form>    
             </div>
         </section>
 
