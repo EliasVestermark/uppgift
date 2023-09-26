@@ -3,6 +3,7 @@
 
 html, body{
     color: #191919;
+    overflow-x: hidden;
 
     ::placeholder {
         color: #c5c3bf;
@@ -693,12 +694,7 @@ header {
 
     .why-choose-us {
         position: relative;
-        padding: 0;
         z-index: 0;
-
-        // @media(min-width: 1400px) {
-        //     display: flex;
-        // }
 
         .container {           
             @media(min-width: 1400px) {
@@ -720,7 +716,6 @@ header {
             }
             
             @media(min-width: 1400px) {
-                right: 0;
                 left: 42%;
                 width: 58dvw;
             }
@@ -796,7 +791,7 @@ header {
             }
         }
 
-        .imgage {
+        .image {
             display: flex;
             margin-top: 50px;
             justify-content: center;
