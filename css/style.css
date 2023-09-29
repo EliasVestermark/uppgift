@@ -304,6 +304,17 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   display: flex;
   justify-self: center;
 }
+.index-main .company-logotypes2 .logotypes {
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 0px 80px 0px;
+  overflow: auto;
+  white-space: nowrap;
+}
+.index-main .company-logotypes2 .logotypes img {
+  display: flex;
+  justify-self: center;
+}
 .index-main .features .container {
   border: 1px solid #d3cfc9;
   max-width: 1520px;
