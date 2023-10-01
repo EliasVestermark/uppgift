@@ -748,12 +748,13 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   height: 225px;
   left: 0;
   right: 0;
-  bottom: -60px;
+  bottom: 0;
   z-index: -1;
 }
 @media (min-width: 768px) {
   .index-main .why-choose-us .image .square {
     height: 425px;
+    bottom: -60px;
   }
 }
 @media (min-width: 1400px) {

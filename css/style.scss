@@ -817,11 +817,12 @@ header {
                 height: 225px;
                 left: 0;
                 right: 0;
-                bottom: -60px;
+                bottom: 0;
                 z-index: -1;
     
                 @media(min-width: 768px) {
                     height: 425px;
+                    bottom: -60px;
                 }
                 
                 @media(min-width: 1400px) {
