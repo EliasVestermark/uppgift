@@ -578,11 +578,13 @@ header {
                         border-radius: 50%;
                         padding: 9px 18px;
                         border: 1px solid #191919;
+                        transition: font-size 0.05s ease-in-out, padding 0.05s ease-in-out;
         
                         &:hover{
                             background-color: #191919;
-                            border-color: #191919;
                             color: #F0EFE9;
+                            font-size: 18px;
+                            padding: 10.5px 17.2px 7.5px;
                         }
                     }
         
@@ -695,10 +697,10 @@ header {
                     color: #FFFFFF;
                     padding: 10px 17px;
                     border-radius: 50%;
+                    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
                     &:hover{
                         background-color: #FFFFFF;
-                        border-color: #191919;
                         color: #191919;
                     }
 
