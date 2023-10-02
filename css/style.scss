@@ -29,6 +29,7 @@ html, body{
         padding: 0.6rem 1.5rem;
         font-weight: 400;
         border-radius: 25px;
+        transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
         i{
             margin-left: 0.5rem;
@@ -49,6 +50,7 @@ html, body{
         padding: 0.6rem 1.5rem;
         font-weight: 400;
         border-radius: 25px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
         i{
             margin-left: 0.5rem;
@@ -56,7 +58,6 @@ html, body{
 
         &:hover{
             background-color: #FFFFFF;
-            border-color: #191919;
             color: #191919;
         }
     }
@@ -69,6 +70,7 @@ html, body{
         padding: 0.6rem 1.5rem;
         font-weight: 400;
         border-radius: 2rem;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
         i{
             margin-left: 0.5rem;
@@ -76,7 +78,6 @@ html, body{
 
         &:hover{
             background-color: #191919;
-            border-color: #191919;
             color: #F0EFE9;
         }
     }

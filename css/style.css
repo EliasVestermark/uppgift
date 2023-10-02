@@ -28,6 +28,7 @@ html .btn-yellow, body .btn-yellow {
   padding: 0.6rem 1.5rem;
   font-weight: 400;
   border-radius: 25px;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 html .btn-yellow i, body .btn-yellow i {
   margin-left: 0.5rem;
@@ -45,13 +46,13 @@ html .btn-black, body .btn-black {
   padding: 0.6rem 1.5rem;
   font-weight: 400;
   border-radius: 25px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 html .btn-black i, body .btn-black i {
   margin-left: 0.5rem;
 }
 html .btn-black:hover, body .btn-black:hover {
   background-color: #FFFFFF;
-  border-color: #191919;
   color: #191919;
 }
 html .btn-transparent, body .btn-transparent {
@@ -62,13 +63,13 @@ html .btn-transparent, body .btn-transparent {
   padding: 0.6rem 1.5rem;
   font-weight: 400;
   border-radius: 2rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 html .btn-transparent i, body .btn-transparent i {
   margin-left: 0.5rem;
 }
 html .btn-transparent:hover, body .btn-transparent:hover {
   background-color: #191919;
-  border-color: #191919;
   color: #F0EFE9;
 }
 html .section-title, body .section-title {
