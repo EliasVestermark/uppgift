@@ -262,7 +262,7 @@ header {
             .content {
                 padding-bottom: 30px;
                 color: RGBA(25,25,25,0.8 );
-    
+
                 h1 {
                     color: #191919;
                     font-family: 'DM Sans', sans-serif;
@@ -292,6 +292,17 @@ header {
     
                     @media(min-width: 1200px){
                         text-align: left;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 16px;
+                    justify-content: center;
+
+                    @media(min-width: 1200px){
+                        justify-content: left;
                     }
                 }
             }

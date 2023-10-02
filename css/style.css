@@ -271,6 +271,17 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     text-align: left;
   }
 }
+.index-main .showcase .container .content .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .index-main .showcase .container .content .buttons {
+    justify-content: left;
+  }
+}
 .index-main .showcase .container img {
   display: none;
   min-height: 500px;
