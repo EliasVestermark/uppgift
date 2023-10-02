@@ -1345,7 +1345,6 @@ footer .bottom-menu a:hover {
 }
 @media (min-width: 992px) {
   .contact-main .contact-menu {
-    display: flex;
     gap: 30px;
     padding: 110px 0px 80px 0px;
   }
@@ -1427,6 +1426,11 @@ footer .bottom-menu a:hover {
   overflow: hidden;
   outline-color: #F9D783;
   resize: none;
+}
+.contact-main .leave-a-message .input-container .btn-yellow {
+  display: block;
+  width: 78%;
+  margin: 30px auto 0px;
 }
 .contact-main .leave-a-message #Send-message {
   display: inline-block;

@@ -1480,7 +1480,6 @@ footer {
         }
     
         @media (min-width: 992px){
-            display: flex;
             gap: 30px;
             padding: 110px 0px 80px 0px;       
         }
@@ -1566,7 +1565,13 @@ footer {
                 overflow: hidden;
                 outline-color: #F9D783;
                 resize: none;
-            }   
+            } 
+            
+            .btn-yellow {
+                display: block;
+                width: 78%;
+                margin: 30px auto 0px;
+            }
         }
     
         #Send-message {
