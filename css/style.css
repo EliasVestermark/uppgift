@@ -521,6 +521,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   padding: 9px 18px;
   border: 1px solid #191919;
   transition: font-size 0.05s ease-in-out, padding 0.05s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .index-main .about-company .title-and-text .buttons-and-text .video .btn-video:hover {
   background-color: #191919;
