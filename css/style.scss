@@ -374,6 +374,7 @@ header {
                 display: block;
                 padding-left: 120px;
                 padding-right: 120px;
+                padding-bottom: 80px;
             }
 
             @media (min-width: 1300px) {
@@ -556,11 +557,13 @@ header {
     
                 @media(min-width: 1000px) {
                     display: block;
+                    margin: auto;
                     margin-top: 44px;
                 }
     
                 @media(min-width: 1200px) {
                     display: flex;
+                    justify-content: left;
                     margin-top: 84px;
                 }
                 
