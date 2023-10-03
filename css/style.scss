@@ -595,7 +595,13 @@ header {
                         transition: font-size 0.05s ease-in-out, padding 0.05s ease-in-out;
                         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
         
-                        &:hover{
+                        
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+
+                        .btn-video {
                             background-color: #191919;
                             color: #F0EFE9;
                             font-size: 18px;

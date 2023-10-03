@@ -537,7 +537,10 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   transition: font-size 0.05s ease-in-out, padding 0.05s ease-in-out;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-.index-main .about-company .title-and-text .buttons-and-text .video .btn-video:hover {
+.index-main .about-company .title-and-text .buttons-and-text .video:hover {
+  cursor: pointer;
+}
+.index-main .about-company .title-and-text .buttons-and-text .video:hover .btn-video {
   background-color: #191919;
   color: #F0EFE9;
   font-size: 18px;
