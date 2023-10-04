@@ -498,7 +498,7 @@ header {
                 @media(min-width: 600px) {
                     position: absolute;
                     width: 368px;
-                    }
+                }
 
                 @media(min-width: 1200px) {
                     bottom: 40px;
@@ -528,7 +528,6 @@ header {
             @media(min-width: 1000px) {
                 text-align: left;
                 margin-top: 0px;
-
             }
 
             .section-title {
@@ -593,9 +592,7 @@ header {
                         padding: 9px 18px;
                         border: 1px solid #191919;
                         transition: font-size 0.05s ease-in-out, padding 0.05s ease-in-out;
-                        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-        
-                        
+                        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;        
                     }
 
                     &:hover {
@@ -658,7 +655,6 @@ header {
             padding-bottom: 30px;
             padding-right: 30px;
             padding-left: 30px;
-            
 
             @media(min-width: 576px) {
                 padding-right: 0px;
@@ -936,7 +932,6 @@ header {
                 grid-template-rows: auto auto;
                 grid-template-areas:    "title btn"
                                         "team team";
-
             }
             
             .section-title {
@@ -1018,7 +1013,7 @@ header {
 
                 @media(min-width: 576px) {
                     padding-left: 50px;
-                padding-right: 50px;
+                    padding-right: 50px;
                 }
 
                 @media(min-width: 1300px) {
@@ -1146,7 +1141,6 @@ header {
             .article {
                 position: relative;
                 display: inline;
-                
 
                 @media(min-width: 1000px) {
                     display: grid;
@@ -1435,7 +1429,6 @@ footer {
         @media(min-width: 768px) {
             display: flex;
             justify-content: space-between;
-            
         }
 
         a {
@@ -1463,8 +1456,8 @@ footer {
         padding-bottom: 80px;
         
         nav{
-            
             padding-bottom: 10px;
+            
             a{
                 color: #5b5752;
                 text-decoration: none;
@@ -1581,7 +1574,6 @@ footer {
                 border-radius: 30px;
                 width: 78%;
                 padding: 18px 10px 15px 35px;
-                padding-right: 20px;
                 margin-top: 16px;
                 overflow: hidden;
                 outline-color: #F9D783;
