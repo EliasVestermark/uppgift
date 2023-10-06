@@ -292,6 +292,26 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     margin-right: -50px;
   }
 }
+.index-main .company-logotypes .logotypes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 1400px) {
+  .index-main .company-logotypes .logotypes {
+    display: flex;
+    gap: 50px;
+    padding-top: 72px;
+    padding-bottom: 80px;
+  }
+}
+.index-main .company-logotypes .logotypes img {
+  display: flex;
+  justify-self: center;
+  max-width: 100%;
+}
 .index-main .company-logotypes2 .logotypes {
   display: flex;
   justify-content: space-between;
@@ -481,22 +501,22 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   }
 }
 .index-main .about-company .title-and-text .buttons-and-text {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
   justify-content: center;
   margin-top: 44px;
 }
-@media (min-width: 321px) {
+@media (min-width: 373px) {
   .index-main .about-company .title-and-text .buttons-and-text {
-    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 1000px) {
   .index-main .about-company .title-and-text .buttons-and-text {
-    display: block;
-    margin: auto;
-    margin-top: 44px;
+    display: grid;
+    justify-content: left;
+    margin-top: 25px;
   }
 }
 @media (min-width: 1200px) {
@@ -509,9 +529,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .index-main .about-company .title-and-text .buttons-and-text .video {
   display: flex;
   margin-top: 20px;
-  align-self: center;
 }
-@media (min-width: 321px) {
+@media (min-width: 373px) {
   .index-main .about-company .title-and-text .buttons-and-text .video {
     margin-left: 40px;
     margin-top: 0;

@@ -320,32 +320,33 @@ header {
         }
     }
 
-    // .company-logotypes {
-    //     .logotypes {
-    //         display: grid;
-    //         justify-content: center;
+    .company-logotypes {
+        .logotypes {
+            // display: grid;
+            // justify-content: center;
 
-    //         @media(min-width: 768px) {
-    //             display: grid;
-    //             grid-template-columns: 1fr 1fr 1fr;
-    //             justify-content: space-evenly;
-    //             padding-top: 20px;
-    //             padding-bottom: 20px;
-    //         }
+            // @media(min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-content: space-evenly;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            // }
 
-    //         @media(min-width: 1400px) {
-    //             display: flex;
-    //             gap: 50px;
-    //             padding-top: 72px;
-    //             padding-bottom: 80px;
-    //         }
+            @media(min-width: 1400px) {
+                display: flex;
+                gap: 50px;
+                padding-top: 72px;
+                padding-bottom: 80px;
+            }
             
-    //         img {
-    //             display: flex;
-    //             justify-self: center;
-    //         }
-    //     }
-    // }
+            img {
+                display: flex;
+                justify-self: center;
+                max-width: 100%;
+            }
+        }
+    }
 
     .company-logotypes2 {
         .logotypes {
@@ -544,20 +545,20 @@ header {
             }
     
             .buttons-and-text {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
+                display: grid;
                 justify-content: center;
                 margin-top: 44px;
 
-                @media(min-width: 321px) {
-                    flex-wrap: nowrap;
+                @media(min-width: 373px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
     
                 @media(min-width: 1000px) {
-                    display: block;
-                    margin: auto;
-                    margin-top: 44px;
+                    display: grid;
+                    justify-content: left;
+                    margin-top: 25px;
                 }
     
                 @media(min-width: 1200px) {
@@ -568,10 +569,9 @@ header {
                 
                 .video {
                     display: flex;
-                    margin-top: 20px;
-                    align-self: center;
+                    margin-top: 20px;           
 
-                    @media(min-width: 321px) {
+                    @media(min-width: 373px) {
                         margin-left: 40px;
                         margin-top: 0;
                     }
