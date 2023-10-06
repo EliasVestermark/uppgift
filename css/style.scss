@@ -321,17 +321,13 @@ header {
     }
 
     .company-logotypes {
-        .logotypes {
-            // display: grid;
-            // justify-content: center;
 
-            // @media(min-width: 768px) {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                justify-content: space-evenly;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            // }
+        .logotypes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-evenly;
+            padding-top: 20px;
+            padding-bottom: 20px;
 
             @media(min-width: 1400px) {
                 display: flex;
@@ -344,21 +340,6 @@ header {
                 display: flex;
                 justify-self: center;
                 max-width: 100%;
-            }
-        }
-    }
-
-    .company-logotypes2 {
-        .logotypes {
-            display: flex;
-            justify-content: space-between;
-            padding: 72px 0px 80px 0px;
-            overflow: auto;
-            white-space: nowrap;
-            
-            img {
-                display: flex;
-                justify-self: center;
             }
         }
     }
